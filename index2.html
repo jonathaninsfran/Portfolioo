@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="header">
+      <a href="/">ERIC MEDINA</a>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Infomações adicionais</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+
+    <h1>Sorteio</h1>
+    <div class="entradas">
+
+      <input type="number" name="num1" id="num1" onchange="addToList(value,1)">
+      <input type="number" name="num2" id="num2" onchange="addToList(value,2)">
+      <input type="number" name="num3" id="num3" onchange="addToList(value,3)">
+      <input type="number" name="num4" id="num4" onchange="addToList(value,4)">
+      <input type="number" name="num5" id="num5" onchange="addToList(value,5)">
+      <input type="number" name="num6" id="num6" onchange="addToList(value,6)">
+      <br>
+    </div>
+    <button type="button" name="button" onclick="verificarAcertos()">SORTEAR</button>
+
+    <ul id="NumSort">
+
+    </ul>
+    <p id="totalAcertos"></p>
+
+  </div>
+  <script type="text/javascript" src="script2.js">
+
+  </script>
+  </body>
+</html>

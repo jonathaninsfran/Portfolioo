@@ -1,0 +1,109 @@
+body,
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2rem;
+  font-family: Arial;
+}
+h1 {
+  margin-left:30px;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.header {
+  background: #1d1e20;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.menu {
+  display: flex;
+}
+.menu li{
+  margin-left: 20px;
+}
+.menu li a{
+  display: block;
+  padding: 10px;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.flex > div{
+  flex: 1 1 200px;
+  margin: 30px;
+}
+
+form {
+  background: #CCC;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0 10px 10px 10px;
+}
+input {
+  width: 470px;
+  height:25px;
+}
+textarea {
+  width: 470px;
+  height:35px;
+}
+.sobre{
+  float: right;
+
+}
+.galeria {
+    margin: 100px auto;
+    width: 1300px;
+    height: 270px;
+    position: relative;
+    overflow: hidden;
+}
+
+.foto {
+  position: absolute;
+  opacity: 0;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+@keyframes animacao {
+  25%{
+    opacity: 1;
+    transform: scale(1.1,1.1);
+  }
+  50%{
+    opacity: 0;
+  }
+}
+
+.foto:nth-child(1) {
+
+}
+.foto:nth-child(2) {
+  animation-delay: 5s;
+}
+.foto:nth-child(3) {
+  animation-delay: 10s;
+}
+.foto:nth-child(4) {
+  animation-delay: 15s;
+}
