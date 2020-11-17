@@ -5,9 +5,14 @@
     <title>Portfólio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="styleform.css">
+    <!-- Os 2 links abaixo pertencem ao BOOTSTRAP -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
   </head>
   <body>
-    <header class="header">
+
+    <!-- <header class="header"> -->
+      <header  class="header" class="row flex-nowrap justify-content-between align-items-center">
       <a href="/">ERIC MEDINA</a>
       <nav>
         <ul class="menu">
@@ -18,6 +23,8 @@
         </ul>
       </nav>
     </header>
+
+  <div class="container-fluid">
 
     <pre class="sobre">
       Me chamo Eric. Estudo no IFMS Campus Ponta Porã e atualmente estou cursando o
@@ -34,28 +41,57 @@
     <h2>Projetos</h2>
 
     <section class="flex">
-      <div>
+       <div class="card"> <!--acrescentei só o card -->
         <a href="index1.html"><img src="imagens/img1.jpg"></a>
+        <div class="card-body">
+          <button class="btn btn-primary">Baixar</button>
+          <button class="btn btn-outline-success">Compartilhar</button>
+        </div>
         <p>Calculadora</p>
       </div>
-      <div>
+
+      <div class="card">
         <a href="index2.html"><img src="imagens/img1.jpg"></a>
+        <div class="card-body">
+          <button class="btn btn-primary">Baixar</button>
+          <button class="btn btn-outline-success">Compartilhar</button>
+        </div>
         <p>Sorteio</p>
       </div>
-      <div>
+
+      <div class="card">
         <a href="index3.html"><img src="imagens/img1.jpg"></a>
+        <div class="card-body">
+          <button class="btn btn-primary">Baixar</button>
+          <button class="btn btn-outline-success">Compartilhar</button>
+        </div>
         <p>Compras</p>
       </div>
-      <div>
+
+      <div class="card">
         <img src="imagens/img1.jpg">
+        <div class="card-body">
+          <button class="btn btn-primary">Baixar</button>
+          <button class="btn btn-outline-success">Compartilhar</button>
+        </div>
         <p>Legenda</p>
       </div>
-      <div>
+
+      <div class="card">
         <img src="imagens/img1.jpg">
+        <div class="card-body">
+          <button class="btn btn-primary">Baixar</button>
+          <button class="btn btn-outline-success">Compartilhar</button>
+        </div>
         <p>Legenda</p>
       </div>
-      <div>
+
+      <div class="card">
         <img src="imagens/img1.jpg">
+        <div class="card-body">
+          <button class="btn btn-primary">Baixar</button>
+          <button class="btn btn-outline-success">Compartilhar</button>
+        </div>
         <p>Legenda</p>
       </div>
     </section>
@@ -74,7 +110,7 @@
     <br>
     <button type="button" name="button">Salvar</button>
   </form>
-
+  </div>
 
   </body>
 </html>
